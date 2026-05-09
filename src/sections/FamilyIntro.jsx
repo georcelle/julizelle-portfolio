@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import "./FamilyIntro.css";
@@ -9,36 +9,37 @@ const family = [
     name: "Julio Lizardo",
     relation: "Father",
     color: "bg-navy",
-    desc: "My father is the quiet pillar of our family. A hardworking man who has never missed a day of providing for us, he taught me the values of discipline and integrity."
+    desc: "My father is the quiet pillar of our family. A hardworking man who has never missed a day of providing for us, he taught me the values of discipline and integrity. Every time I felt like giving up during my clinical rotations, I thought of the pride I hope to see on his face."
   },
   {
     initials: "IL",
     name: "Irene Lizardo",
     relation: "Mother",
     color: "bg-blue",
-    desc: "The heart of our home. She is the one who dried my tears during difficult shifts and stayed up with me through sleepless study nights. Her strength inspired my calling."
+    desc: "The heart of our home. She is the one who dried my tears during difficult shifts and stayed up with me through sleepless study nights. Her selflessness and strength inspired me to become a nurse long before I realized it was my calling."
   },
   {
     initials: "L",
     name: "My Siblings",
     relation: "Siblings",
     color: "bg-teal",
-    desc: "Growing up among three brothers and one sister has shaped my resilience. Their unwavering support throughout my nursing journey has meant more than words can say."
+    desc: "Growing up among three brothers and one sister has shaped my resilience and my ability to lead with patience. From our shared laughter to their protective support, they are my constant reminders of why I strive to provide the best care for others."
   }
 ];
 
-// Array for your 5 photos
+// Updated with your exact file names from the screenshot
 const familyPhotos = [
-  "/family1.jpg", 
-  "/family2.jpg", 
-  "/family3.jpg", 
-  "/family4.jpg", 
-  "/family5.jpg"
+  "/19f776ed-f1c8-40a7-a8e3-36d0fac5ee19.jpeg",
+  "/265e9d58-cd11-43c8-8380-9d11b27e113a.jpeg",
+  "/772efff8-2882-421a-89b1-01e0e488e48e.jpeg",
+  "/aca46de8-05aa-4656-b2a0-aa400d2a411d.jpeg",
+  "/afa6e7fb-82c8-4c06-a512-323cd9e181a1.jpeg"
 ];
 
 export default function FamilyIntro() {
-  // Initialize Embla with Autoplay
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 4000 })]);
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 4000, stopOnInteraction: false })
+  ]);
 
   return (
     <div id="family" className="family-section">
@@ -47,7 +48,6 @@ export default function FamilyIntro() {
         <h2 className="section-title">Family Introduction</h2>
         <div className="divider" />
         
-        {/* Carousel Section */}
         <div className="family-carousel">
           <div className="embla" ref={emblaRef}>
             <div className="embla__container">
@@ -81,7 +81,7 @@ export default function FamilyIntro() {
 
         <div className="family-footer">
           <p>
-            To my family — thank you for being my reason, my refuge, and my greatest strength.
+            To my family — thank you for being my reason, my refuge, and my greatest strength. This portfolio, and everything it represents, belongs to you just as much as it belongs to me.
           </p>
         </div>
       </div>
