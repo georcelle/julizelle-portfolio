@@ -1,3 +1,4 @@
+import { GraduationCap, MapPin } from "lucide-react";
 import "./AboutMe.css";
 
 const timeline = [
@@ -11,7 +12,7 @@ const skills = ["Patient Assessment", "Health Education", "Community Nursing", "
 
 export default function AboutMe() {
   return (
-    <div className="about-section">
+    <div id="about" className="about-section">
       <div className="page-wrapper">
         <p className="section-eyebrow">About</p>
         <h2 className="section-title">My Nursing Journey</h2>
@@ -20,21 +21,29 @@ export default function AboutMe() {
         <div className="about-layout">
           <div className="about-left">
             <div className="about-profile-card card">
-              <div className="about-avatar">JLL</div>
+              {/* Image replaces the JLL circle while keeping the class name for CSS styling */}
+              <img 
+                src="/julizelle.png" 
+                alt="Julizelle L. Lizardo" 
+                className="about-avatar" 
+              />
+              
               <h3 className="about-name">Julizelle L. Lizardo</h3>
               <p className="about-role">BSN Student · 4th Year</p>
+              
               <div className="about-tags">
                 {["Community Health", "NCMCOA6", "4th Year"].map(t => (
                   <span key={t} className="tag">{t}</span>
                 ))}
               </div>
+
               <div className="about-details">
                 <div className="about-detail-row">
-                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 1a5 5 0 100 10A5 5 0 008 1zM1 8a7 7 0 1114 0A7 7 0 011 8z" stroke="currentColor" strokeWidth="1.4"/></svg>
+                  <GraduationCap size={16} />
                   <span>Bachelor of Science in Nursing</span>
                 </div>
                 <div className="about-detail-row">
-                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 9.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" stroke="currentColor" strokeWidth="1.4"/><path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/></svg>
+                  <MapPin size={16} />
                   <span>Philippines</span>
                 </div>
               </div>
@@ -57,7 +66,7 @@ export default function AboutMe() {
               My name is Julizelle L. Lizardo, and nursing is the path I chose with both my heart and my mind. Growing up, I witnessed firsthand how dedicated healthcare workers can change lives — and that sparked in me an unquenchable desire to be one of them.
             </p>
             <p className="about-bio">
-              Throughout four years of nursing school, I have faced late-night study sessions, challenging clinical rotations, and moments that tested my resilience. But every difficult day has only deepened my commitment to this profession. I believe that a good nurse listens before she speaks, observes before she acts, and always puts the patient's dignity first.
+              Throughout four years of nursing school, I have faced late-night study sessions, challenging clinical rotations, and moments that tested my resilience. But every difficult day has only deepened my commitment to this profession.
             </p>
             <p className="about-bio">
               Today, as a 4th-year nursing student, I carry with me the lessons of every patient I've cared for, every skill I've practiced, and every mentor who guided me. This portfolio is a reflection of that journey.
@@ -70,8 +79,8 @@ export default function AboutMe() {
                   <div className="timeline-dot" />
                   <div>
                     <span className="badge badge-blue" style={{ marginBottom: 6, display: "inline-block" }}>{year}</span>
-                    <h4 style={{ fontSize: 15, fontWeight: 600, color: "var(--navy)", marginBottom: 4 }}>{label}</h4>
-                    <p style={{ fontSize: 14, color: "var(--text-muted)", lineHeight: 1.65 }}>{desc}</p>
+                    <h4 className="timeline-label">{label}</h4>
+                    <p className="timeline-desc">{desc}</p>
                   </div>
                 </div>
               ))}
