@@ -14,7 +14,7 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
-# Added global environment variable to force Node 24 for all actions
+# Global environment variable to opt-into Node 24 for all actions
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -28,12 +28,13 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          # Updated from 20 to 24 to fix the build failure
+          # Updated to Node 24 to resolve deprecation warnings
           node-version: 24
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        # Added --legacy-peer-deps to fix the Vite/React version conflicts
+        run: npm install --legacy-peer-deps
 
       - name: Build
         run: npm run build

@@ -5,29 +5,23 @@ import "./FamilyIntro.css";
 
 const family = [
   {
-    initials: "JL",
     name: "Julio Lizardo",
     relation: "Father",
-    color: "bg-navy",
     desc: "My father is the quiet pillar of our family. A hardworking man who has never missed a day of providing for us, he taught me the values of discipline and integrity. Every time I felt like giving up during my clinical rotations, I thought of the pride I hope to see on his face."
   },
   {
-    initials: "IL",
     name: "Irene Lizardo",
     relation: "Mother",
-    color: "bg-blue",
     desc: "The heart of our home. She is the one who dried my tears during difficult shifts and stayed up with me through sleepless study nights. Her selflessness and strength inspired me to become a nurse long before I realized it was my calling."
   },
   {
-    initials: "L",
     name: "My Siblings",
     relation: "Siblings",
-    color: "bg-teal",
     desc: "Growing up among three brothers and one sister has shaped my resilience and my ability to lead with patience. From our shared laughter to their protective support, they are my constant reminders of why I strive to provide the best care for others."
   }
 ];
 
-// Updated with your exact file names from the screenshot
+// Exact filenames from your public folder
 const familyPhotos = [
   "/19f776ed-f1c8-40a7-a8e3-36d0fac5ee19.jpeg",
   "/265e9d58-cd11-43c8-8380-9d11b27e113a.jpeg",
@@ -69,9 +63,8 @@ export default function FamilyIntro() {
         </div>
 
         <div className="family-grid">
-          {family.map(({ initials, name, relation, color, desc }) => (
+          {family.map(({ name, relation, desc }) => (
             <div key={name} className="family-card card">
-              <div className={`family-avatar ${color}`}>{initials}</div>
               <h3 className="family-name">{name}</h3>
               <span className="badge badge-blue family-relation">{relation}</span>
               <p className="family-desc">{desc}</p>
