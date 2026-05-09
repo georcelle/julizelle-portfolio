@@ -23,11 +23,11 @@ const family = [
 
 // Exact filenames from your public folder
 const familyPhotos = [
-  "/19f776ed-f1c8-40a7-a8e3-36d0fac5ee19.jpeg",
-  "/265e9d58-cd11-43c8-8380-9d11b27e113a.jpeg",
-  "/772efff8-2882-421a-89b1-01e0e488e48e.jpeg",
-  "/aca46de8-05aa-4656-b2a0-aa400d2a411d.jpeg",
-  "/afa6e7fb-82c8-4c06-a512-323cd9e181a1.jpeg"
+  "/public/19f776ed-f1c8-40a7-a8e3-36d0fac5ee19.jpeg",
+  "/public/265e9d58-cd11-43c8-8380-9d11b27e113a.jpeg",
+  "/public/772efff8-2882-421a-89b1-01e0e488e48e.jpeg",
+  "/public/aca46de8-05aa-4656-b2a0-aa400d2a411d.jpeg",
+  "/public/afa6e7fb-82c8-4c06-a512-323cd9e181a1.jpeg"
 ];
 
 export default function FamilyIntro() {
