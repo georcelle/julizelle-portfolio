@@ -2,33 +2,26 @@ import "./FamilyIntro.css";
 
 const family = [
   {
-    initials: "RL",
-    name: "Ricardo L. Lizardo",
+    initials: "JL",
+    name: "Julio Lizardo",
     relation: "Father",
     color: "bg-navy",
-    desc: "My father is the quiet pillar of our family. A hardworking man who has never missed a day of providing for us, he taught me the values of discipline, perseverance, and integrity. He may not always say it out loud, but I know he is my greatest cheerleader. Every time I felt like giving up, I thought of the pride I hope to one day see on his face."
+    desc: "My father is the quiet pillar of our family. A hardworking man who has never missed a day of providing for us, he taught me the values of discipline and integrity. Every time I felt like giving up during my clinical rotations, I thought of the pride I hope to see on his face."
   },
   {
-    initials: "LL",
-    name: "Lorena L. Lizardo",
+    initials: "IL",
+    name: "Irene Lizardo",
     relation: "Mother",
     color: "bg-blue",
-    desc: "My mother is the heart of our home. She is the one who dried my tears during difficult clinical rotations, stayed up with me through sleepless study nights, and always reminded me that I am capable of more than I think. Her strength and selflessness are the very definition of what it means to nurture — and she inspired me to become a nurse long before I knew that was my calling."
+    desc: "The heart of our home. She is the one who dried my tears during difficult shifts and stayed up with me through sleepless study nights. Her selflessness and strength inspired me to become a nurse long before I realized it was my calling."
   },
   {
-    initials: "JL",
-    name: "[Sibling Name]",
-    relation: "Sibling",
+    initials: "L",
+    name: "My Siblings",
+    relation: "Siblings",
     color: "bg-teal",
-    desc: "My sibling is my confidant and my source of laughter on even the hardest days. Growing up together has shaped my sense of empathy and my ability to understand others. We challenge each other to be better, and their unwavering support throughout my nursing journey has meant more to me than words can say."
-  },
-  {
-    initials: "GG",
-    name: "Lola & Lolo",
-    relation: "Grandparents",
-    color: "bg-gold",
-    desc: "My grandparents represent the roots that ground me. Their stories of resilience, faith, and community have deeply influenced my values as a future healthcare provider. Caring for the elderly holds special meaning for me because of them — every elderly patient I serve reminds me of the people who first taught me what unconditional love looks like."
-  },
+    desc: "Growing up as a girl among three brothers and one sister has shaped my resilience and my ability to lead with patience. From our shared laughter to their protective support, they are my constant reminders of why I strive to provide the best care for others."
+  }
 ];
 
 export default function FamilyIntro() {
