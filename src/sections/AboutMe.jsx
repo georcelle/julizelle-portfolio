@@ -2,10 +2,10 @@ import { GraduationCap, MapPin } from "lucide-react";
 import "./AboutMe.css";
 
 const timeline = [
-  { year: "2021", label: "Started BSN Program", desc: "Began my nursing journey with determination and a passion for helping others, stepping into my first year of the Bachelor of Science in Nursing program." },
-  { year: "2022", label: "2nd Year — Fundamentals of Nursing", desc: "Deepened my clinical skills through laboratory practice, mastering fundamental nursing procedures and patient assessment techniques." },
-  { year: "2023", label: "3rd Year — Clinical Rotations Begin", desc: "Entered the hospital setting for the first time, rotating through medical-surgical wards, pediatric units, and the emergency room." },
-  { year: "2024", label: "4th Year — Community Health Nursing", desc: "Expanded my practice into community settings, applying public health principles and advocating for underserved populations as part of NCMCOA6." },
+  { year: "2022-2023", label: "Started BSN Program", desc: "Began my nursing journey with determination and a passion for helping others, stepping into my first year of the Bachelor of Science in Nursing program." },
+  { year: "2023-2024", label: "2nd Year — Fundamentals of Nursing", desc: "Deepened my clinical skills through laboratory practice, mastering fundamental nursing procedures and patient assessment techniques." },
+  { year: "2024-2025", label: "3rd Year — Clinical Rotations Begin", desc: "Entered the hospital setting for the first time, rotating through medical-surgical wards, pediatric units, and the emergency room." },
+  { year: "2025-2026", label: "4th Year — Community Health Nursing", desc: "Expanded my practice into community settings, applying public health principles and advocating for underserved populations as part of NCMCOA6." },
 ];
 
 const skills = ["Patient Assessment", "Health Education", "Community Nursing", "IV Therapy", "Vital Signs Monitoring", "Care Planning", "Medical Documentation", "First Aid & BLS"];
