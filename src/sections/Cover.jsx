@@ -16,7 +16,7 @@ export default function Cover({ onEnter }) {
 
         <div className="cover-name-row fade-up delay-2">
           <img
-            src="/julizelle.png"
+            src="./julizelle.png"
             alt="Julizelle L. Lizardo"
             className="cover-photo"
           />
