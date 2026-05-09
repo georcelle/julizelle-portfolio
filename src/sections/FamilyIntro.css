@@ -1,0 +1,65 @@
+.family-section { background: var(--off-white); }
+
+.family-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.family-card {
+  padding: 28px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.family-avatar {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  color: white;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  letter-spacing: 0.04em;
+}
+
+.bg-navy { background: var(--navy); }
+.bg-blue { background: var(--blue); }
+.bg-teal { background: var(--teal); }
+.bg-gold { background: var(--accent); }
+
+.family-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.family-relation { margin-bottom: 14px; }
+
+.family-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  text-align: left;
+}
+
+.family-footer {
+  background: var(--blue-pale);
+  border: 1px solid var(--blue-muted);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 17px;
+  color: var(--navy);
+  line-height: 1.8;
+  text-align: center;
+}

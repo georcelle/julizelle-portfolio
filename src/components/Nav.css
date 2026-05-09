@@ -1,0 +1,112 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 64px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.nav-initials {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+}
+
+.nav-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--navy);
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 4px;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+.nav-link:hover { color: var(--navy); background: var(--gray-100); }
+.nav-link--active { color: var(--blue); background: var(--blue-pale); }
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.nav-toggle span {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--navy);
+  border-radius: 2px;
+  transition: transform 0.2s;
+}
+
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background: rgba(10,37,64,0.3);
+}
+
+@media (max-width: 900px) {
+  .nav-name { display: none; }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 64px; right: 0;
+    width: 260px;
+    background: white;
+    flex-direction: column;
+    padding: 16px;
+    border-left: 1px solid var(--gray-200);
+    border-bottom: 1px solid var(--gray-200);
+    box-shadow: -4px 4px 20px rgba(10,37,64,0.1);
+    z-index: 100;
+    gap: 2px;
+    bottom: 0;
+  }
+  .nav--open .nav-links { display: flex; }
+  .nav-toggle { display: flex; }
+  .nav-link { font-size: 15px; padding: 10px 16px; }
+}
+
+@media (max-width: 600px) {
+  .nav { padding: 0 24px; }
+}

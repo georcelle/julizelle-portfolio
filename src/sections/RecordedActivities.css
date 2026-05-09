@@ -1,0 +1,84 @@
+.activities-section { background: var(--white); }
+
+.activities-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+  background: var(--gray-100);
+  padding: 6px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.activities-tab {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 4px;
+  border-radius: 7px;
+  transition: background 0.15s;
+}
+.activities-tab--active {
+  background: var(--white);
+  box-shadow: 0 1px 4px rgba(10,37,64,0.1);
+}
+
+.activities-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.activities-period-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.activities-count {
+  font-size: 13px;
+  color: var(--text-muted);
+  background: var(--gray-100);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.activity-card { padding: 20px 24px; }
+
+.activity-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.activity-num {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--blue-muted);
+  line-height: 1;
+  min-width: 40px;
+}
+
+.activity-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.activity-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  padding-left: 56px;
+}
